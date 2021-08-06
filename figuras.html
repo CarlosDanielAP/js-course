@@ -15,7 +15,7 @@
     <p>primer taller del curso practico de javascript</p>
     
     <section>
-        <h2>caslucla el area y perimetro de un cuadrado</h2>
+        <h2>calcula el area y perimetro de un cuadrado</h2>
         <form>
             <label for="InputCuadrado">
                 Escribe cuanto mide cada lado de tu cuadrado
@@ -31,6 +31,29 @@
         </form>
     </section>
 
-    <script src="/js-course/figuras.js"></script>
+    <section>
+        <h2>calcular la altura de un triangulo isosceles</h2>
+        <form>
+            <label for="Base">
+                Base
+            </label>
+            <input id="Base" type="number">
+
+            <label for="Lado1">
+                Lado 1
+            </label>
+            <input id="Lado1" type="number">
+
+            <label for="Lado2">
+                Lado 2
+            </label>
+            <input id="Lado2" type="number">
+           
+
+            <button type="button" onclick="calcularAlturaTrianguloIsosceles()" >Calcular Altura</button>
+        </form>
+    </section>
+
+    <script src="/figuras.js"></script>
 </body>
 </html>

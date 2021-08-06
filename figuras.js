@@ -33,6 +33,24 @@ function areaTriangulo(base, altura){
     return (base*altura)/2;
 }
 
+function verificarIsoceles(base,lado1, lado2){
+    if(lado1==lado2){
+        if(base==lado1){
+            return false;
+        }
+        else{
+            return true;
+        }
+    }
+    else{
+        return false;
+    }
+}
+
+function calcularAlturaTriangulo(base,lado1){
+    return Math.sqrt((lado1*lado1)-(base*base));
+}
+
 console.groupEnd();
 
 //Codigo del circulo
@@ -74,4 +92,17 @@ function calcularAreaCuadrado(){
     const area= areaCuadrado(value);
     alert(area);
 
+}
+
+function calcularAlturaTrianguloIsosceles(){
+   const milado1 =document.getElementById("Lado1").value;
+   const milado2 =document.getElementById("Lado2").value;
+   const mibase =document.getElementById("Base").value;
+   if(!verificarIsoceles(mibase,milado1,milado2)){
+       alert("No es un tiangulo isoceles");
+   }
+   else{
+       const altura=calcularAlturaTriangulo(mibase/2,milado1)
+        alert(altura);
+   }
 }
