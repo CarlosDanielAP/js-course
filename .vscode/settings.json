@@ -1,5 +1,6 @@
 {
   "editor.formatOnSave": true,
   "editor.fontWeight": null,
-  "editor.defaultFormatter": "esbenp.prettier-vscode"
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "cSpell.words": ["Cupon", "buscar", "promedio"]
 }
